@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+  <div class="header-bar"></div>
+  <main class="container">
+      <section class="dashboard-section">
+        <header class="page-header">
+          <div>
+            <h1>Social media Dashboard</h1>
+            <h2>Total Followers: <output class="total-followers-output">23,004</output></h2>
+          </div>
+          <hr>
+          <div class="theme-toggler-container">
+            <h2>Dark Mode</h2>
+            <label class="switch">
+              <input id="switch-input" type="checkbox" onclick="toggleTheme()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </header>
+        <div class="grid-container">
+          <div class="dashboard-grid">
+          <article class="dashboard-item facebook-border">
+            <div class="item-background">
+              <div class="social-media-link">
+                <p>
+                <img src="images/icon-facebook.svg" alt=""><a href="">@nathanf</a>
+                </p>
+              </div>
+              <div class="followers">
+                <p><output>1987</output><span class="followers-subtitle">Followers</span></p>
+              </div>
+              <div class="followers-today">
+                <p class="grouth positive-grouth">
+                  <img src="images/icon-up.svg" alt=""><output>12</output><span> Today</span>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="dashboard-item twitter-border">
+            <div class="item-background">
+              <div class="social-media-link">
+                <p>
+                <img src="images/icon-twitter.svg" alt=""><a href="">@nathanf</a>
+                </p>
+              </div>
+              <div class="followers">
+                <p><output>1044</output><span class="followers-subtitle">Followers</span></p>
+              </div>
+              <div class="followers-today">
+                <p class="grouth positive-grouth">
+                  <img src="images/icon-up.svg" alt=""><output>99</output><span> Today</span>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="dashboard-item instagram-border">
+            <div class="item-background">
+              <div class="social-media-link">
+                <p>
+                <img src="images/icon-instagram.svg" alt=""><a href="">@realnathanf</a>
+                </p>
+              </div>
+              <div class="followers">
+                <p><output>11k</output><span class="followers-subtitle">Followers</span></p>
+              </div>
+              <div class="followers-today">
+                <p class="grouth positive-grouth">
+                  <img src="images/icon-up.svg" alt=""><output>1099</output><span> Today</span>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="dashboard-item youtube-border">
+            <div class="item-background">
+              <div class="social-media-link">
+                <p>
+                <img src="images/icon-youtube.svg" alt=""><a href="">Nathan F.</a>
+                </p>
+              </div>
+              <div class="followers">
+                <p><output>8239</output><span class="followers-subtitle">Subscribers</span></p>
+              </div>
+              <div class="followers-today">
+                <p class="grouth negative-grouth"> 
+                  <img src="images/icon-up.svg" alt=""><output>144</output><span> Today</span>
+                </p>
+              </div>
+            </div>
+          </article> 
+        </div>
+        </div>
+        
+      </section>
+      <section class="overview-section">
+        <header>
+          <h1>Overview - Today</h1>
+        </header>
+        <div class="overview-grid">
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Page Views</p>
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>87</output>
+              <p class="grouth positive-grouth"><img src="images/icon-up.svg" alt=""><output>3%</output></p>
+            </div>
+          </article>
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Likes</p>
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>52</output>
+              <p class="grouth negative-grouth"><img src="images/icon-up.svg" alt=""><output>2%</output></p>
+            </div>
+          </article>
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Likes</p>
+              <img src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>5462</output>
+              <p class="grouth positive-grouth"><img src="images/icon-up.svg" alt=""><output>2257%</output></p>
+            </div>
+          </article>
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Profile Views</p>
+              <img src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>52k</output>
+              <p class="grouth positive-grouth"><img src="images/icon-up.svg" alt=""><output>1375%</output></p>
+            </div>
+          </article>
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Retweets</p>
+              <img src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>117</output>
+              <p class="grouth positive-grouth"><img src="images/icon-up.svg" alt=""><output>303%</output></p>
+            </div>
+          </article>
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Likes</p>
+              <img src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>507</output>
+              <p class="grouth positive-grouth"><img src="images/icon-up.svg" alt=""><output>553%</output></p>
+            </div>
+          </article>
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Likes</p>
+              <img src="images/icon-youtube.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>107</output>
+              <p class="grouth negative-grouth"><img src="images/icon-up.svg" alt=""><output>19%</output></p>
+            </div>
+          </article>
+          <article class="overview-item">
+            <div class="overview-item-line">
+              <p>Total Views</p>
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="overview-item-line">
+              <output>1407</output>
+              <p class="grouth negative-grouth"><img src="images/icon-up.svg" alt=""><output>12%</output></p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ernesto Neto</a>.
+  </footer>
+  <script type="text/javascript" src="script/index.js"></script>
+</body>
+</html>
