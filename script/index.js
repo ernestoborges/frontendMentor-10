@@ -14,7 +14,6 @@ function toggleTheme() {
  }
 }
 
-
 // Immediately invoked function to set the theme on initial load
 (function () {
  if (localStorage.getItem('theme') === 'dark-theme') {
@@ -25,3 +24,13 @@ function toggleTheme() {
      document.getElementById("switch-input").checked = true;
  }
 })();
+
+
+const grouth = document.querySelectorAll(".grouth");
+for (let i = 0; i < grouth.length; i++) {
+    if(grouth[i].classList.contains("positive-grouth")) {
+        grouth[i].querySelector(".arrow-img").src = "images/icon-up.svg"
+    }else if(grouth[i].classList.contains("negative-grouth")) {
+        grouth[i].querySelector(".arrow-img").src = "images/icon-down.svg"
+    }
+}
