@@ -41,10 +41,11 @@
 	--card-bg-hover: hsl(232,33.3%,91.2%);
 	--text-1 : hsl(230, 17%, 14%);						/*(Text)*/						
 	--text-2 : hsl(228, 12%, 44%);						/*(Text)*/
+
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; color: var(--text-1); }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 * {
@@ -207,14 +208,6 @@ hr {
 	letter-spacing: 0.313rem;
 }
 
-/*.overview-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-}*/
-
 .overview-section header {
 	margin-bottom: 1.563rem;
 }
@@ -268,7 +261,7 @@ hr {
 	margin-bottom: 0.5rem;
 }
 
-/*All css switch button*/
+/*All css for switch button*/
 
 .switch {
   position: relative;
@@ -327,6 +320,19 @@ input:checked + .slider:before {
 
 @media only screen and (min-width: 1000px) {
 	
+	hr {
+		display: none;
+	}
+
+	.page-header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.theme-toggler-container {
+		gap: 1rem;
+	}
+
 	.overview-item {
 		padding: 1.5rem;
 		grid-gap: 1rem;
